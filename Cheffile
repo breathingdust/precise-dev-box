@@ -1,0 +1,24 @@
+#!/usr/bin/env ruby
+#^syntax detection
+
+site 'http://community.opscode.com/api/v1'
+cookbook "apt"
+cookbook "build_essential",
+	:git => "https://github.com/opscode-cookbooks/build-essential.git"
+cookbook 'database'
+cookbook 'postgresql'
+
+# cookbook 'chef-client'
+
+# cookbook 'apache2', '>= 1.0.0'
+
+# cookbook 'rvm',
+#   :git => 'https://github.com/fnichol/chef-rvm'
+
+
+ # :git => "git://github.com/fnichol/chef-apt.git",
+ # :ref => "cacher-client-solo-support"
+
+
+#   :git => 'https://github.com/findsyou/cookbooks',
+ #  :ref => 'postgresql-improvements'
