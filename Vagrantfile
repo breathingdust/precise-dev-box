@@ -104,10 +104,6 @@ end
   #   chef.json = { :mysql_password => "foo" }
   # end
 
-
-
-
-
   # Enable provisioning with chef server, specifying the chef server URL,
   # and the path to the validation key (relative to this Vagrantfile).
   #
@@ -130,4 +126,3 @@ end
   # chef-validator, unless you changed the configuration.
   #
   #   chef.validation_client_name = "ORGNAME-validator"
-

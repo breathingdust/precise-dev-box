@@ -14,10 +14,9 @@ GIT
   ref: master
   sha: c1f1166bcd20ac4b3dbda518a794936ac4401d7f
   specs:
-    build_essential (1.4.4)
+    build-essential (1.4.4)
 
 DEPENDENCIES
   apt (>= 0)
-  build_essential (>= 0)
+  build-essential (>= 0)
   postgresql (>= 0)
-
