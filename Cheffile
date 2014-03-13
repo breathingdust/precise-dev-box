@@ -7,8 +7,7 @@ cookbook "apt"
 cookbook "build-essential",
 	:git => "https://github.com/opscode-cookbooks/build-essential.git"
 cookbook 'postgresql',
-  :git => 'https://github.com/findsyou/cookbooks',
-  :ref => 'postgresql-improvements'
+  :git => 'https://github.com/hw-cookbooks/postgresql.git'
 
 # cookbook 'database'
 

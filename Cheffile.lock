@@ -2,13 +2,17 @@ SITE
   remote: http://community.opscode.com/api/v1
   specs:
     apt (2.3.8)
+    openssl (1.1.0)
 
 GIT
-  remote: https://github.com/findsyou/cookbooks
-  ref: postgresql-improvements
-  sha: ae23e8bb35e7fddf0709bd986742b38618b4db1e
+  remote: https://github.com/hw-cookbooks/postgresql.git
+  ref: master
+  sha: 5800238828b443725442fe510ec4f5308ed9ce8b
   specs:
-    postgresql (0.11.1)
+    postgresql (3.3.4)
+      apt (>= 0.0.0)
+      build-essential (>= 0.0.0)
+      openssl (>= 0.0.0)
 
 GIT
   remote: https://github.com/opscode-cookbooks/build-essential.git
