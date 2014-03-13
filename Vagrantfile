@@ -16,7 +16,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         "postgresql" => {
           "version" => "9.1",
           "password" => {
-            "postgres" => "password"
+            "postgres" => "md532e12f215ba27cb750c9e093ce4b5127"
           },
           "server" => {
             "service_name" => "postgresql"
