@@ -6,15 +6,25 @@ VAGRANTFILE_API_VERSION = "2"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.box = "precise32"
-
-   config.vm.provision :chef_solo do |chef|
+  config.vm.network "forwarded_port", guest: 5432, host: 5433
+  config.vm.provision :chef_solo do |chef|
      chef.cookbooks_path = "cookbooks"
      chef.add_recipe "apt"
      chef.add_recipe "build-essential"
-     chef.add_recipe "postgresql"
-   end
+     chef.add_recipe "postgresql::server"
+     chef.json = {
+        "postgresql" => {
+          "version" => "9.1",
+          "password" => {
+            "postgres" => "password"
+          },
+          "server" => {
+            "service_name" => "postgresql"
+          }
+        }
+     }
+  end
 end
-
 
   # All Vagrant configuration is done here. The most common configuration
   # options are documented and commented below. For a complete reference,
