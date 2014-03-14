@@ -18,6 +18,11 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
           "password" => {
             "postgres" => "md532e12f215ba27cb750c9e093ce4b5127"
           },
+          "config" => {
+            "ssl" => false,
+            "port" => "5432",
+            "listen_addresses" => "*"
+          },
           "server" => {
             "service_name" => "postgresql"
           }

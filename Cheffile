@@ -8,13 +8,3 @@ cookbook "build-essential",
 	:git => "https://github.com/opscode-cookbooks/build-essential.git"
 cookbook 'postgresql',
   :git => 'https://github.com/hw-cookbooks/postgresql.git'
-
-# cookbook 'database'
-
-# cookbook 'chef-client'
-# cookbook 'apache2', '>= 1.0.0'
-# cookbook 'rvm',
-#   :git => 'https://github.com/fnichol/chef-rvm'
-
-# :git => "git://github.com/fnichol/chef-apt.git",
-# :ref => "cacher-client-solo-support"
